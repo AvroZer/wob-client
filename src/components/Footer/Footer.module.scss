@@ -1,0 +1,51 @@
+.footer {
+    margin-top: 25px;
+    background-color: #1867a9;
+    padding: 25px 0px;
+    color: #99ccff;
+
+    &__upper {
+        display: grid;
+        grid-template-columns: auto repeat(3, 1fr);
+        align-items: start;
+        margin-bottom: 50px;
+    }
+
+    &__date {
+        justify-self: center;
+    }
+}
+
+.text {
+    width: 430px;
+
+    p {
+        line-height: 25px;
+    }
+}
+
+.logo {
+    margin-right: 50px;
+    width: 58px;
+    height: 30px;
+}
+
+.upper__text {
+    text-align: justify;
+    font-size: 12px;
+}
+
+.middle__text {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 15px 0px;
+    font-size: 12px;
+    text-wrap: balance;
+}
+
+.bottom__text {
+    font-weight: 600;
+    color: #c4e2ff;
+    text-align: center;
+}

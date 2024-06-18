@@ -1,0 +1,93 @@
+.auth__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.back {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    top: -25px;
+    left: 20px;
+}
+
+.auth {
+    position: relative;
+    &__title {
+        text-align: center;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+
+    &__form {
+        backdrop-filter: brightness(1.2) blur(5px);
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        border: 1px solid #000;
+        width: 400px;
+        margin-inline: auto;
+        border-radius: 25px;
+    }
+    &__label {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    &__input {
+        backdrop-filter: brightness(.7) blur(30px);
+        background-color: transparent;
+        border: 1px solid #000;
+        width: 300px;
+        height: 50px;
+        border-radius: 10px;
+        padding: 10px 20px;
+        outline: none;
+        font-size: 18px;
+        color: #fff;
+
+        &::placeholder {
+            font-size: 18px;
+            font-weight: 700;
+            color: #ffffff;
+        }
+    }
+
+    &__btn {
+        backdrop-filter: blur(15px);
+        margin-top: 10px;
+        font-size: 20px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: 1px solid #000;
+        background-color: transparent;
+        cursor: pointer;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+
+    &__text {
+        color: #fff;
+        display: flex;
+        gap: 20px;
+        font-size: 18px;
+
+        button {
+            background-color: transparent;
+            border: none;
+            color: inherit;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}

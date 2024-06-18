@@ -1,0 +1,22 @@
+.header__dates {
+    justify-self: start;
+}
+
+.header__time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5;
+    color: #fff;
+}
+
+
+.header__date {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 220px;
+    text-align: center;
+    line-height: 1.5;
+}

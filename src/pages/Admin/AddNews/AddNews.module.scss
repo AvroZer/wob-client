@@ -1,0 +1,140 @@
+.addNews {
+    &__title {
+        font-size: 48px;
+        border: none;
+        border-bottom: 1px solid #747474;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        outline: none;
+
+        width: 100%;
+        padding-left: 10px;
+        margin-bottom: 25px;
+    }
+
+    &__annotation {
+        font-size: 24px;
+        margin-top: 25px;
+        border: none;
+        border-bottom: 1px solid #747474;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        outline: none;
+
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    &__choice {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+
+    &__categories {
+        padding: 10px 20px;
+        background-color: #0051ff;
+        border: none;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 15px;
+        cursor: pointer;
+
+        option {
+            cursor: pointer;
+            border: none;
+            border-radius: 0px;
+        }
+    }
+
+    &__btn {
+        padding: 10px 20px;
+        background-color: #0051ff;
+        border: none;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        cursor: pointer;
+
+        transition: 0.1s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        &:active {
+            transform: scale(1);
+        }
+
+        img {
+            height: 20px;
+            width: 20px;
+        }
+    }
+}
+
+.editor {
+    button {
+        font-size: 24px;
+    }
+    margin: 25px 0px;
+    font-size: 24px;
+    ol {
+        padding-left: 40px;
+        li {
+            list-style-type: decimal;
+        }
+    }
+    ul {
+        padding-left: 40px;
+        li {
+            list-style-type: disc;
+        }
+    }
+}
+
+.back__link {
+    margin-bottom: 25px;
+    display: inline-block;
+    position: relative;
+    border: 1px solid #0051ff;
+    background-color: #0051ff;
+    z-index: 1;
+
+    a {
+        padding: 10px 20px;
+        z-index: 1;
+        display: block;
+        color: #fff;
+
+        transition: 0.3s ease-in-out;
+        &:hover {
+            color: #000;
+        }
+    }
+
+    &::before {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        width: 100%;
+        background-color: #ffffff;
+        bottom: 0px;
+        height: 100%;
+        left: 0;
+        transform-origin: left;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover::before {
+        transform-origin: right;
+        transform: scaleX(1);
+    }
+}

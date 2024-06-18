@@ -1,0 +1,44 @@
+.error {
+    background-color: #1b1363;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__title {
+        font-weight: 900;
+        font-size: 100px;
+        color: #fff;
+        text-align: center;
+    }
+
+    &__text {
+        font-size: 50px;
+        color: #fff;
+        text-align: center;
+    }
+
+    &__link {
+        font-size: 50px;
+        color: #000;
+        margin-top: 120px;
+        background-color: #fff;
+        padding: 10px 20px;
+        border-radius: 20px;
+
+        transition: .2s ease-in-out;
+
+        &:hover {
+            color: #fff;
+            background-color: #2D1FA3;
+            transform: scale(1.1);
+            border: 3px solid #fff;
+        }
+    }
+
+    img {
+        width: 300px;
+        height: 300px;
+    }
+}

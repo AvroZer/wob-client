@@ -1,0 +1,27 @@
+.hero {
+    height: 220px;
+    &__images {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        padding: 25px 0;
+        img {
+            height: 150px;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__img {
+        img {
+            height: 250px;
+        }
+    }
+}
+
+
+.right {
+    justify-self: center;
+}

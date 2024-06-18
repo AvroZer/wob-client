@@ -1,0 +1,110 @@
+.news {
+    &__item {
+        .news__card {
+            height: 100%;
+        }
+    }
+
+    &__list {
+        gap: 50px;
+        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__card {
+        border: 1px solid #000;
+        border-radius: 20px;
+        width: 100%;
+        background-color: #fff;
+        // background-color: #E9E6FF;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__content {
+        padding: 15px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__img {
+        height: 350px;
+
+        img {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+        word-wrap: break-word;
+        margin-bottom: 15px;
+    }
+
+    &__date {
+        color: #333;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    &__desc {
+        margin-top: auto;
+        word-wrap: break-word;
+        width: 100%;
+        margin-bottom: 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+    }
+
+    &__btn {
+        cursor: pointer;
+        text-align: center;
+        font-size: 16px;
+        border-radius: 10px;
+        border: none;
+        background-color: #2400ff;
+
+        transition: background-color 0.2s ease-in-out,
+            transform 0.2s ease-in-out;
+        &:hover {
+            background-color: #3a19ff;
+            transform: scale(1.1);
+        }
+        &:active {
+            transform: scale(1);
+        }
+
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            padding: 10px;
+        }
+    }
+}
+
+.card__bottom {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.news__notfound {
+    font-size: 36px;
+    font-weight: 600;
+    color: #023f87;
+    text-align: center;
+    padding: 20px;
+}
